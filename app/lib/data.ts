@@ -130,7 +130,7 @@ export async function fetchFilteredInvoices(
 }
 
 export async function fetchInvoicesPages(query: string) {
-  noStore();
+  // noStore();
   try {
     const count = await sql`SELECT COUNT(*)
     FROM invoices
